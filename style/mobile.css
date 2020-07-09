@@ -1,0 +1,29 @@
+@media (max-width: 1160px) {
+    body {
+        background-image: linear-gradient(to bottom right, rgb(236, 214, 114), rgb(65, 226, 113), rgb(223, 226, 34));
+    }
+
+    .header-nav-link {
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 940px) {
+    body {
+        background-image: linear-gradient(to bottom right, rgb(15, 41, 16), rgb(226, 65, 172), rgb(166, 201, 218));
+    }
+
+    .header-nav-ulist li {
+        margin: 5px;
+    }
+
+    .header-nav-ulist {
+        height: 100%;
+        margin: 0px;
+    }
+    
+    .header-nav-link {
+        margin: 20px 40px;
+    }
+}
