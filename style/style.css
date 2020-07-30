@@ -6,12 +6,17 @@
     --weight-heavy: 700;
 }
 /* ------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
     font-weight: var(--weight-light);
-    background-image: linear-gradient(to bottom right, rgb(114, 236, 120), rgb(134, 65, 226), rgb(34, 165, 226));
+    background-color: rgb(63, 149, 160);
+    /* background-image: linear-gradient(to bottom, rgb(27, 182, 117), rgb(89, 119, 201)); */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,12 +26,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 strong {
-    color: rgb(223, 157, 16);
+    color: indianred;
 }
 
 /* HEADER */
 /* ------------------------------------------- */
 .header {
+    box-shadow: 0px 20px 20px 0px rgba(125, 125, 125, 0.3);
     background-color:  rgba(50, 56, 105, 0.6);
 }
 
@@ -73,8 +79,8 @@ strong {
 /* ------------------------------------------- */
 .section {
     margin: 20px 20px;
-    border: 0px solid;
     border-radius: 30px;
+    box-shadow: 0px 20px 20px 0px rgba(125, 125, 125, 0.3);
 }
 
 .section-title {
@@ -87,7 +93,9 @@ strong {
 /* ------------------------------------------- */
 .hero {
     height: 200px;
-    background-color:  rgba(50, 56, 105, 0.6);
+    border: 1px solid rgb(255, 255, 255);
+    /* background-color:  rgba(50, 56, 105, 0.6); */
+    background-color:  rgba(255, 255, 255, 0.1);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -224,6 +232,44 @@ strong {
 }
 /* ------------------------------------------- */
 
+/* CAROUSEL */
+/* ------------------------------------------- */
+
+.carousel {
+    margin: 70px 100px;
+    padding: 0px;
+}
+
+.carousel_container {
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel_item {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    height: 250px;
+    margin: 0px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transform-origin: center;
+    transition: 450ms;
+}
+
+.carousel_container:hover .carousel_item {
+    opacity: 0.3;
+}
+
+.carousel_container:hover .carousel_item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+/* ------------------------------------------- */
+
 /* CERTIFICATES */
 /* ------------------------------------------- */
 .certificates {
@@ -231,12 +277,14 @@ strong {
     background-color: rgba(255, 255, 255, 0.5);
 }
 .certificates-body {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
 }
 
 .certificate {
+    overflow: scroll;
+    white-space: nowrap;
     margin: 20px 40px;
     padding: 10px;
     width: 400px;
@@ -244,9 +292,9 @@ strong {
     border: 0px solid;
     border-radius: 10px;
     background-color: rgba(125, 125, 125, 0.5);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     box-shadow: 0px 20px 20px 0px rgba(125, 125, 125, 0.3);
 }
 
